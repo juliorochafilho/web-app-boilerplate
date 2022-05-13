@@ -7,6 +7,7 @@ const prisma = new PrismaClient();
 
 export default NextAuth({
   // Seting up the callbacks so we receive the user id from the database when using useSession()
+  debug: true,
   callbacks: {
     async jwt({ token, account }) {
       // Persist the OAuth access_token to the token right after signin

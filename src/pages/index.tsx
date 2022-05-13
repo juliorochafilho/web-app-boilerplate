@@ -1,9 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import { signIn, useSession } from "next-auth/react";
 
-import styles from 'src/pages/index.module.css'
+import styles from "src/pages/index.module.css";
 
 export default function Home() {
+  const session = useSession();
+  console.log(session)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +16,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <button onClick={() => signIn()}>Sign in</button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -54,12 +59,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
