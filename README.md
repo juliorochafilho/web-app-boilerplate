@@ -1,25 +1,23 @@
-# Next.js + Jest
+# My personal boilerplate
 
-This example shows how to configure Jest to work with Next.js.
-
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript.
+Feel free to contribute with different branches.
 
 ## How to Use
 
 Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
 
-In your terminal, run the following command:
+If you are using the prisma branch, run the following command:
 
 ```bash
-npx create-next-app --example with-jest with-jest-app
-# or
-yarn create next-app --example with-jest with-jest-app
-# or
-pnpm create next-app -- --example with-jest with-jest-app
+yarn prisma migrate
+
+yarn prisma studio
+
+yarn dev
 ```
 
-## Run Jest Tests
+## Auth providers
 
-```bash
-npm test
-```
+To get Next Auth working you need to setup the provider(s) you want to use. Searh in the docs witch one you want to use:
+
+https://next-auth.js.org/providers/
