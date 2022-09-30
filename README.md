@@ -4,7 +4,7 @@ Feel free to contribute with different branches.
 
 ## How to Use
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+This project was created with [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
 
 If you are using the prisma branch, run the following command:
 
