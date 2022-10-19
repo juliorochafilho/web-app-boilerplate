@@ -1,6 +1,9 @@
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  // url for localhost postgres = DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+  // postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA 
+  // More info about the databse url in: https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/connect-your-database-node-postgres
   // shadowDatabaseUrl = env("SHADOW_DATABASE_URL") // Only needed when using a cloud provider that doesn't support the creation of new databases, like Heroku. Learn more: https://pris.ly/migrate-shadow
 }
 
